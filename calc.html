@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="calc.css">
+    <title>Tips</title>
+</head>
+<body>
+    <div class="header">
+        <img src="file:///C:/Users/varun/AppData/Local/Temp/Temp1_tip-calculator-app-main.zip/tip-calculator-app-main/images/logo.svg" alt="#logosliptip">
+    </div>
+
+    <section>
+        <div class="sect-1">
+            <div class="bill_sect">
+                <h3>Bill</h3>
+                <input id="bill" type="number" class="bill">
+            </div>
+    
+            <div class="tip">
+                <h3>Select Tip %</h3>
+                <div class="button-grid">
+                    <button class="fivepercentn">5%</button>
+                    <button class="tenpercent">10%</button>
+                    <button class="fifteenpercent">15%</button>
+                    <button class="twentyfivepercent">25%</button>
+                    <button class="fiftypercent">50%</button>
+                    <input type="number" class="custom-grid" placeholder="Custom">
+                </div>  
+            </div>
+    
+            <div class="ppl-container">
+                <h3>Number of People</h3>
+                <h3 id="ppl-msg">Can't be zero or less</h3>
+            </div>
+            <input type="number" class="ppl-input">    
+        </div>
+        
+        <div class="tip-container">
+            <div class="tip-calc">
+                <div class="tip-amount">
+                    <h3>Tip Amount <span>/ person</span></h3>
+                    <div class="tipPerPerson">
+                        <span id="tip-amount-dollar"></span>
+                    </div>
+                </div>
+
+                <div class="tip-total">
+                    <h3>Total <span>/ person</span></h3>
+                    <div class="totalPerPerson">
+                        <span id="total-amount-dollar"></span>
+                    </div>
+                </div>    
+            </div>
+
+            <button type="reset" id="reset-btn">Reset</button>
+        </div>
+    </section>
+
+    
+
+    <script src="calc.js"></script>
+</body>
+</html>
